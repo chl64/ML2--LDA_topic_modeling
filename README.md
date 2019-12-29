@@ -18,7 +18,7 @@ First problem LDA is able to address is the inevitable situation that when a tra
   <img width=600 src="demo_images/unique_vocabs_in_test.png" >
 </p>
 
-LDA takes this situation into account by introducing "**pseudo-counts**" for all vocabs **including the unseen ones**. In this way the unseen vocabs were "virtually seen" during training, giving the generative model the capability to generate these unseen vocabs when put in use.
+LDA takes this situation into account by introducing "**pseudo-counts**" to all vocabs **including the unseen ones**. In this way the unseen vocabs were "virtually seen" during training, giving the generative model the capability to generate these unseen vocabs when put in use.
 
 ---
 
