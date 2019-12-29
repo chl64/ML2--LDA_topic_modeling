@@ -18,7 +18,8 @@ First problem LDA is able to address is the inevitable situation that **when a t
   <img width=600 src="demo_images/unseen_vocabs.png" >
 </p>
 
-LDA takes this situation into account by introducing "**pseudo-counts**" to all vocabs **including the unseen ones**. In this way the unseen vocabs were "virtually seen" during training, giving the generative model the capability to generate these unseen vocabs when put in use.
+LDA takes this situation into account by introducing "**pseudo-counts**" γ to all vocabs **including the unseen ones**. In this way the unseen vocabs were "virtually seen" during training, giving the generative model the capability to generate these unseen vocabs when put in use.
 
 ---
 
+In order to categorise documents into different topics, documents belonging to different topics should be generated differently by the model. In the light of this, LDA possesses **a unique vocab distribution β for each topic**. Moreover, since a document doesn't necessarily belong to only one single topic, LDA assigns **a unique topic proportion θ to each document**. In effect, different words in the same document can belong to differnt topics.
