@@ -12,10 +12,10 @@ Shown above are an enormous collection of documents to be automatically categori
 
 ---
 
-First problem LDA is able to address is the inevitable situation that when a trained categorisatoin system is put into use, it will inevitably encounter vocabs which have never been seen before, just like some vocabs in the test set were absent in the training set:
+First problem LDA is able to address is the inevitable situation that **when a trained categorisatoin system is put into use, it will inevitably encounter vocabs which have never been seen before**, just like some vocabs in the test set were absent in the training set:
 
 <p align="center">
-  <img width=600 src="demo_images/unique_vocabs_in_test.png" >
+  <img width=600 src="demo_images/unseen_vocabs.png" >
 </p>
 
 LDA takes this situation into account by introducing "**pseudo-counts**" to all vocabs **including the unseen ones**. In this way the unseen vocabs were "virtually seen" during training, giving the generative model the capability to generate these unseen vocabs when put in use.
